@@ -1,2 +1,41 @@
-# ProjetFinal
-# ProjetCybercine
+
+# ProjetFinal Cybercine
+
+Bonjour, ceci est mon projet de fin de formation Kercode 2023 pour l'obtention du titre de Développeur intégrateur en réalisation d'applications web.
+
+Il s'agit d'un site fictif de films dont les utilisateurs inscrits peuvent noter ou commenter des films qui sont mis en ligne par un administrateur.
+
+Les images et toutes les informations concernant les films sont réelles et non libres de droit, mais aucune diffusion du site ne sera faite en dehors de ma formation et de la présentation finale.
+
+## Technologies utilisées
+
+- HTML
+- CSS : l'ensemble du site est responsive 
+- Javascript
+- PHP : orienté objet
+- SQL : CRUD complet
+
+Le site est réalisé sur une architecture MVC (Modele vue controlleur) et "composer" a été installé pour gérer les dépendances.
+
+## Installation du site
+
+Vous pouvez créer un nouveau compte ou utiliser les identifiants suivants:
+
+Identifiants administrateurs:
+Pseudo : Admin
+mot de passe : AdminKercode56
+
+identifiants utilisateur:
+Pseudo : Delph
+mot de passe : Delph
+
+
+## Améliorations possibles
+
+Ajout des commentaires sur les profils utlisateurs afin qu'ils puissent les supprimer ou les modifier
+Modération des commentaires avant ajout sur la fiche du film (prévu mais manque de temps)
+
+
+
+
+

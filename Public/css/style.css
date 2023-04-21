@@ -1,0 +1,318 @@
+@font-face {
+    font-family: 'atkinson_hyperlegibleregular';
+    src: url('./App/Public/fonts/atkinson-hyperlegible-regular-102-webfont.eot');
+    src: url('./App/Public/fonts/atkinson-hyperlegible-regular-102-webfont.eot?#iefix') format('embedded-opentype'),
+        url('./App/Public/fonts/atkinson-hyperlegible-regular-102-webfont.woff') format('woff'),
+        url('./App/Public/fonts/atkinson-hyperlegible-regular-102-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'atkinson_hyperlegiblebold';
+    src: url('atkinson-hyperlegible-bold-102-webfont.eot');
+    src: url('atkinson-hyperlegible-bold-102-webfont.eot?#iefix') format('embedded-opentype'),
+        url('atkinson-hyperlegible-bold-102-webfont.woff') format('woff'),
+        url('atkinson-hyperlegible-bold-102-webfont.ttf') format('truetype');
+
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'atkinson_hyperlegibleBdIt';
+    src: url('atkinson-hyperlegible-bolditalic-102-webfont.eot');
+    src: url('atkinson-hyperlegible-bolditalic-102-webfont.eot?#iefix') format('embedded-opentype'),
+        url('atkinson-hyperlegible-bolditalic-102-webfont.woff') format('woff'),
+        url('atkinson-hyperlegible-bolditalic-102-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'atkinson_hyperlegibleitalic';
+    src: url('atkinson-hyperlegible-italic-102-webfont.eot');
+    src: url('atkinson-hyperlegible-italic-102-webfont.eot?#iefix') format('embedded-opentype'),
+        url('atkinson-hyperlegible-italic-102-webfont.woff') format('woff'),
+        url('atkinson-hyperlegible-italic-102-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --blue: rgb(19, 86, 113);
+    --brown: rgba(182, 137, 53, 0.637);
+}
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* general*/
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h1,h2,h3,h4,h5,h6,a {
+    font-family: 'atkinson', 'Times New Roman', Times, serif;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+}
+
+/****************** header user******************/
+
+.my-btn-outline-success {
+    border-color: var(--blue);
+    color: var(--blue);
+}
+
+.my-btn-outline-success:hover {
+    color: white;
+    background-color: var(--blue);
+}
+
+.image-container {
+    position: relative;
+}
+
+@media only screen and (max-width: 768px){
+.image-container h1 {
+    font-size: 35px;
+}
+.image-container img{
+    height: 150px;
+}
+}
+.text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.centered-image {
+    display: block;
+    margin: 0 auto;
+}
+
+.my-img-fluid {
+    max-width: 100%;
+    max-height: 250px;
+    width: fit-content;
+    object-fit: fill;
+}
+
+.my-nav-link {
+    margin: 0 10px;
+    padding-top: 20px;
+}
+
+/****************** header admin******************/
+.right-align {
+    float: right;
+    margin-bottom: 10px;
+}
+
+.my-navbar-nav {
+    margin-top: -20px;
+}
+
+.text-container-admin {
+    margin-top: 25px;
+}
+
+.btn-adm {
+    margin-top: 15px;
+}
+
+.btn-logout {
+    margin-bottom: 15px;
+    background-color: var(--brown);
+    border-color: var(--brown);
+    text-decoration: none;
+    color: black;
+}
+
+/*********************Admin Add Movie************/
+.btn-adm-mov,
+.btn-adm-mov:hover {
+    background-color: var(--brown);
+    border-color: var(--brown);
+    text-decoration: none;
+    color: black;
+
+}
+#deleteMovie hr, #deleteGenre hr{
+    margin-left: auto;
+    margin-right: 0;
+}
+
+
+
+/*********************connection*****************/
+
+.noAccount,
+.btnCon {
+    margin: 20px 0;
+}
+
+.btnCon,
+.btnCon:hover {
+    background-color: var(--brown);
+    border-color: var(--brown);
+    text-decoration: none;
+    color: black;
+}
+
+.btnCon a {
+    color: black;
+    text-decoration: none;
+}
+
+/**********************home********************/
+.carousel-item img {
+
+    max-height: 400px;
+    max-width: 300px;
+    margin: auto;
+}
+
+.myImg {
+    height: 350px;
+    /* height: 400px; */
+    width: 300px;
+    margin: auto;
+}
+
+.btnUp .icone {
+    height: 40px;
+    width: 40px;
+    background: var(--blue);
+    border-radius: 50%;
+    position: absolute;
+    right: 50px;
+}
+
+.btnUp .icone:hover {
+    transform: scaleY(1.5);
+}
+
+.my-row .btn {
+    background-color: var(--brown);
+    border-color: var(--brown);
+    text-decoration: none;
+    color: black;
+}
+
+.my-comment {
+    height: 300px;
+}
+
+hr {
+    height: 5px;
+    background-color: var(--brown);
+    border: none;
+    width: 50%;
+    margin: 10px 0;
+}
+
+#deleteUser hr {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.checked {
+    color: orange;
+}
+
+
+
+
+/***********************create user***************/
+.my-form-control {
+    margin-top: 20px;
+}
+
+/***********************All movies****************/
+
+.card {
+    margin-bottom: 20px;
+}
+
+.my-card-img {
+
+    height: 400px;
+    width: 340px;
+    margin: auto;
+   }
+
+
+.my-card {
+    height: 660px;
+}
+
+.card-footer-custom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+
+.my-btn-info {
+    background-color: var(--brown);
+    width: 120px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.no-background {
+    background: none;
+    border: none;
+}
+
+
+/**********************top3********************/
+.top-card {
+    height: 400px;
+}
+
+.my-card-img-top {
+    height: 850px;
+}
+
+
+
+
+
+
+
+
+
+/*********************footer*********************/
+.nav a {
+    margin-top: 20px;
+    padding-bottom: 20px;
+    color: black;
+}

@@ -1,0 +1,17 @@
+{
+    "name": "kercode/cybercine",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Projet\\": "App/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Sarah5630",
+            "email": "sarah.rop@live.fr"
+        }
+    ]
+}
