@@ -7,11 +7,11 @@ include_once('./App/Views/Front/Layouts/Header.php');
     <h3>Identité</h3>
     <hr>
     <p>Nom du site web : Cyberciné</p>
-    <p>Adresse du site : https://www.cyberciné.fr></p>
+    <p>Adresse du site : https://www.cyberciné.fr</p>
 
     <p>Propriétaire : Sarah Roperch</p>
 
-    <p>Responsable de publication : Roperch Sarah – sarah.rop@live.fr ></p>
+    <p>Responsable de publication : Roperch Sarah – sarah.rop@live.fr </p>
 
     <h3>Conditions d’utilisation</h3>
     <hr>
@@ -23,7 +23,7 @@ include_once('./App/Views/Front/Layouts/Header.php');
 
     <p>Le propriétaire du site ne peut être tenu responsable des dommages directs et indirects consécutifs à l’accès au site.</p>
     <h3>Interactivité</h3>
-    
+
     <p>Les utilisateurs du site peuvent y déposer du contenu, apparaissant sur le site dans des espaces dédiés (notamment via les commentaires). Le contenu déposé reste sous la responsabilité de leurs auteurs, qui en assument pleinement l’entière responsabilité juridique.</p>
     <hr>
     <p>Le propriétaire du site se réserve néanmoins le droit de retirer sans préavis et sans justification tout contenu déposé par les utilisateurs qui ne satisferait pas à la charte déontologique du site ou à la législation en vigueur.</p>
@@ -47,8 +47,6 @@ include_once('./App/Views/Front/Layouts/Header.php');
     <p>Pour exercer ces droits ou pour toute question sur le traitement de vos données dans ce dispositif, vous pouvez contacter (le cas échéant, notre délégué à la protection des données ou le service chargé de l’exercice de ces droits) par mail à l'adresse suivante : sarah.rop@live.fr
 
     <p>Si vous estimez, après nous avoir contactés, que vos droits « Informatique et Libertés » ne sont pas respectés, vous pouvez adresser une réclamation à la CNIL.</p>
-
-
 
 </section>
 

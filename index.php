@@ -4,14 +4,11 @@
 
 session_start();
 
-
 use \Projet\Controllers\UserController;
 use \Projet\Controllers\MovieController;
 use \Projet\Controllers\GenreController;
 use \Projet\Controllers\LoginController;
 use \Projet\Controllers\CommentController;
-
-
 
 
 //---------------------------Composer autoload--------------------
@@ -28,8 +25,6 @@ try {
     $genreController = new GenreController();
     $loginController = new LoginController();
     $commentController = new CommentController();
-
-
 
     if (isset($_GET['action'])) {
         $action = $_GET['action'];
@@ -103,7 +98,6 @@ try {
                 $movieController->goHome();
                 break;
 
-
             case 'contact':
                 $userController->contact();
                 break;
@@ -122,7 +116,7 @@ try {
                 }
 
             default:
-                // Action non reconnue
+                // error
                 echo "Une erreur est survenue";
                 break;
         }
@@ -132,7 +126,6 @@ try {
 } catch (Error $e) {
 
     require './Errorcatcher.php';
-}
-catch (Exception $e) {
+} catch (Exception $e) {
     require './Error404.php';
 }

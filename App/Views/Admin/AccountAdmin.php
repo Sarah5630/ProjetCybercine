@@ -13,7 +13,6 @@ include_once('./App/Views/Front/Layouts/Header.php');
    <?php if (!empty($userInfo)) : ?>
       <hr>
       <ul>
-
          <li>Pseudo : <?php echo $userInfo['Pseudo']; ?></li>
          <li>Nom : <?php echo $userInfo['Name']; ?></li>
          <li>Prénom : <?php echo $userInfo['Firstname']; ?></li>
@@ -22,13 +21,10 @@ include_once('./App/Views/Front/Layouts/Header.php');
    <?php endif; ?>
 </section>
 
-
 <section id="deleteUser" class="container bg-contact text-right">
-
    <h2>Supprimer mon compte</h2>
    <hr>
    <form action="index.php?action=deleteUser" method="post">
-
       <div class="form-row">
          <div class="col-md-6">
             <input type="text" class="form-control my-form-control" name="pseudo" placeholder="Pseudo" value="<?php echo isset($_POST['pseudo']) ? $_POST['pseudo'] : ''; ?>">
@@ -47,7 +43,6 @@ include_once('./App/Views/Front/Layouts/Header.php');
    <h2>Modifier mes informations</h2>
    <hr>
    <form action="index.php?action=updateUser" method="post">
-
       <div class="form-row">
          <div class="col-md-6">
             <input type="text" class="form-control my-form-control" name="pseudo" placeholder="Pseudo" value="<?php echo isset($_POST['pseudo']) ? $_POST['pseudo'] : ''; ?>">

@@ -40,8 +40,6 @@ include_once('./App/Views/Admin/Layouts/Header.php');
                 <label for="dateAdded">Date d'ajout<span class="required">*</span></label>
                 <input type="text" id="dateAdded" name="dateAdded" class="form-control" required>
             </div>
-
-
             <div class="form-group">
                 <label for="idGenre">Genre<span class="required">*</span></label>
                 <select class="form-control" id="idGenre" name="idGenre" required>
@@ -53,8 +51,6 @@ include_once('./App/Views/Admin/Layouts/Header.php');
                     <option value="5">Romance</option>
                 </select>
             </div>
-
-
             <button type="submit" name="submit" class="btn btn-primary btn-adm-mov">Ajouter le film</button>
         </form>
     </section>
@@ -62,12 +58,10 @@ include_once('./App/Views/Admin/Layouts/Header.php');
         <h2>Supprimer le film</h2>
         <hr>
         <form action="indexAdmin.php?action=deleteMovie" method="post">
-
             <div class="form-group mt-4">
                 <label for="idMovie">Id du film<span class="required">*</span></label>
                 <input type="text" id="idMovie" name="idMovie" class="form-control" required>
             </div>
-
             <button type="submit" name="deleteMovie" class="btn btn-primary btn-adm-mov">Supprimer le film</button>
         </form>
     </section>

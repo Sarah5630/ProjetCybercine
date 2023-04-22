@@ -13,7 +13,7 @@ include_once('./App/Views/Admin/Layouts/Header.php');
         </div>
         <input type="submit" name="submit" class="btn btn-adm-mov" value="Ajouter">
     </form>
-    
+
     <div id="deleteGenre" class="form-group">
         <h2 class="mt-5 mb-4 text-right">Supprimer un genre</h2>
         <hr>
@@ -26,7 +26,7 @@ include_once('./App/Views/Admin/Layouts/Header.php');
                 <option value="3">Thriller</option>
                 <option value="4">Policier</option>
                 <option value="5">Romance</option>
-                <option value="6">test</option>
+            
             </select>
 
             <button type="submit" name="deleteGenre" class="btn btn-adm-mov btn-adm">Supprimer</button>

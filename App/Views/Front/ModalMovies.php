@@ -17,6 +17,7 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
+
                 </div>
                 <div class="modal-body mx-4">
                     <div class="tab-content">
@@ -34,29 +35,27 @@
                             <p>Casting : <?php echo $movie['Casting']; ?></p>
                             <p>Résumé : <?php echo $movie['Synopsis']; ?></p>
                         </div>
+
                         <div class="tab-pane" id="ratingTab<?php echo $movie['IdMovie']; ?>" role="tabpanel">
                             <form method="post" action="index.php?action=addComment">
                                 <p>Donnez-nous votre avis</p>
-
                                 <div class="form-group">
                                     <label for="comment_text">Commentaire :</label>
                                     <textarea class="form-control h-100" name="comment" id="comment" required></textarea>
                                 </div>
                                 <div class="form-group">
                                     <label for="rating">Note :</label>
-
                                     <input type="radio" name="rating" value="1" id="star1"><label for="star1"><span class="fas fa-star" data-star="1"></span></label>
                                     <input type="radio" name="rating" value="2" id="star2"><label for="star2"><span class="fas fa-star" data-star="2"></span></label>
                                     <input type="radio" name="rating" value="3" id="star3"><label for="star3"><span class="fas fa-star" data-star="3"></span></label>
                                     <input type="radio" name="rating" value="4" id="star4"><label for="star4"><span class="fas fa-star" data-star="4"></span></label>
                                     <input type="radio" name="rating" value="5" id="star5"><label for="star5"><span class="fas fa-star" data-star="5"></span></label>
-
                                 </div>
-
                                 <input type="hidden" name="idMovie" value="<?php echo $movie['IdMovie']; ?>">
                                 <input type="submit" value="Envoyer">
                             </form>
                         </div>
+
                         <div class="tab-pane" id="commentsTab<?php echo $movie['IdMovie']; ?>" role="tabpanel">
                             <ul class="list-group">
                                 <?php foreach ($allMoviesComments[$movie['IdMovie']] as $comment) : ?>
@@ -70,6 +69,7 @@
                                 <?php endforeach; ?>
                             </ul>
                         </div>
+                        
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
                         </div>

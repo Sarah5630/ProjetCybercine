@@ -9,7 +9,6 @@ include_once('./App/Views/Front/Layouts/Header.php');
    <hr>
 
    <form action="index.php?action=createUser" method="post">
-
       <div class="form-row">
          <div class="col-md-6">
             <input type="text" class="form-control my-form-control" name="pseudo" placeholder="Pseudo" value="<?php echo isset($_POST['pseudo']) ? $_POST['pseudo'] : ''; ?>">
@@ -42,7 +41,6 @@ include_once('./App/Views/Front/Layouts/Header.php');
       </div>
    </form>
 </section>
-
 
 
 <?php include_once('./App/Views/Front/Layouts/Footer.php'); ?>

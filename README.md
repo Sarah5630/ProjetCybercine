@@ -11,6 +11,9 @@ Les images et toutes les informations concernant les films sont réelles et non 
 
 - HTML
 - CSS : l'ensemble du site est responsive 
+- points de ruptures : 1280x720
+                       810x1080
+                       375x812 
 - Javascript
 - PHP : orienté objet
 - SQL : CRUD complet
@@ -32,8 +35,14 @@ mot de passe : Delph
 
 ## Améliorations possibles
 
-Ajout des commentaires sur les profils utlisateurs afin qu'ils puissent les supprimer ou les modifier
-Modération des commentaires avant ajout sur la fiche du film (prévu mais manque de temps)
+Il était prévu que ce soit dans mon projet mais j'ai manqué de temps pour tout réaliser.
+
+Ajout des commentaires sur les profils utlisateurs afin qu'ils puissent les supprimer ou les modifier.
+
+Modération des commentaires avant ajout sur la fiche du film (prévu mais manque de temps).
+
+Création d'une interface administrateur avec des statistiques
+
 
 
 

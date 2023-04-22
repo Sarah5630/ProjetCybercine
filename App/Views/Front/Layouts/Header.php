@@ -1,3 +1,4 @@
+<header>
     <!-- Navigation bar -->
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">

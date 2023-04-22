@@ -141,7 +141,6 @@ class UserController
 
         // Display the account page with the user information
         require('./App/Views/Front/Account.php');
-
     }
 
     // Load the home page

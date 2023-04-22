@@ -86,7 +86,6 @@ include_once('./App/Views/Front/Layouts/Header.php');
                     <p class="card-text"><small class="text-muted">Ajouté le : <?php echo date('d/m/Y', strtotime($movie['DateAdded'])); ?></small></p>
                   <?php endif; ?>
 
-
                   <a class="btn my-btn-info d-flex justify-content-center text-align-center" title="Plus d'infos" data-toggle="modal" data-target="#movieModal<?php echo $movie['IdMovie']; ?>">Plus d'infos</a>
                 </div>
               </div>
@@ -97,6 +96,7 @@ include_once('./App/Views/Front/Layouts/Header.php');
     <?php endif; ?>
   </div>
 </div>
+
 <?php
 $movies = $latestMovies;
 include_once('./App/Views/Front/ModalMovies.php');
@@ -105,7 +105,6 @@ include_once('./App/Views/Front/ModalMovies.php');
 <a href class="btnUp" title="Bouton up">
   <img src="Public/img/up-arrow-button-svgrepo-com.svg" alt="bouton up" class="icone">
 </a>
-
 
 
 <?php include_once('./App/Views/Front/Layouts/Footer.php'); ?>

@@ -25,17 +25,10 @@ include_once('./App/Views/Front/Layouts/Header.php');
    <?php endif; ?>
 
 </section>
-<section id="displayComments" class="container">
-
-
-</section>
-
 <section id="deleteUser" class="container bg-contact text-right">
-
    <h2>Supprimer mon compte</h2>
    <hr>
    <form action="index.php?action=deleteUser" method="post">
-
       <div class="form-row">
          <div class="col-md-6">
             <input type="text" class="form-control my-form-control" name="pseudo" placeholder="Pseudo" value="<?php echo isset($_POST['pseudo']) ? $_POST['pseudo'] : ''; ?>">
@@ -44,21 +37,16 @@ include_once('./App/Views/Front/Layouts/Header.php');
             <input type="password" class="form-control my-form-control" name="password" placeholder="Mot de passe">
          </div>
       </div>
-
       <div>
          <input type="submit" class="btn btn-primary btnCon" name="submit" value="Supprimer mon compte">
       </div>
-
    </form>
-
-
 </section>
 
 <section id="updateUser" class="container bg-contact">
    <h2>Modifier mes informations</h2>
    <hr>
    <form action="index.php?action=updateUser" method="post">
-
       <div class="form-row">
          <div class="col-md-6">
             <input type="text" class="form-control my-form-control" name="pseudo" placeholder="Pseudo" value="<?php echo isset($_POST['pseudo']) ? $_POST['pseudo'] : ''; ?>">
@@ -80,18 +68,11 @@ include_once('./App/Views/Front/Layouts/Header.php');
             <input type="text" class="form-control my-form-control" name="firstname" placeholder="Prénom" value="<?php echo isset($_POST['firstname']) ? $_POST['firstname'] : ''; ?>">
          </div>
       </div>
-
       <div>
          <input type="submit" class="btn btn-primary btnCon" name="submit" value="Modifier">
       </div>
    </form>
 </section>
-
-
-
-
-
-
 
 
 <?php include_once('./App/Views/Front/Layouts/Footer.php'); ?>

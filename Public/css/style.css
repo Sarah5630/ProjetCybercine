@@ -92,14 +92,16 @@ h2 {
     position: relative;
 }
 
-@media only screen and (max-width: 768px){
-.image-container h1 {
-    font-size: 35px;
+@media only screen and (max-width: 768px) {
+    .image-container h1 {
+        font-size: 35px;
+    }
+
+    .image-container img {
+        height: 150px;
+    }
 }
-.image-container img{
-    height: 150px;
-}
-}
+
 .text-container {
     position: absolute;
     top: 50%;
@@ -161,11 +163,12 @@ h2 {
     color: black;
 
 }
-#deleteMovie hr, #deleteGenre hr{
+
+#deleteMovie hr,
+#deleteGenre hr {
     margin-left: auto;
     margin-right: 0;
 }
-
 
 
 /*********************connection*****************/
@@ -246,7 +249,6 @@ hr {
 
 
 
-
 /***********************create user***************/
 .my-form-control {
     margin-top: 20px;
@@ -263,7 +265,7 @@ hr {
     height: 400px;
     width: 340px;
     margin: auto;
-   }
+}
 
 
 .my-card {
@@ -301,12 +303,6 @@ hr {
 .my-card-img-top {
     height: 850px;
 }
-
-
-
-
-
-
 
 
 

@@ -111,14 +111,12 @@ class Movie extends Manager
     {
         // Get top 3
         $db = $this->manager();
-        // $req = $db->prepare("SELECT * FROM movies ORDER BY Rating DESC LIMIT 3");
         $req = $db->prepare("SELECT * FROM movies LIMIT 3");
         $req->execute();
 
         // Fetch the top 3 movies from the result set
         $topMovies = $req->fetchAll(PDO::FETCH_ASSOC);
-        //var_dump($topMovies);
-        //die("end Moddels::getTopRatedMovies");
+   
         // Return the array of top rated movies
         return $topMovies;
     }

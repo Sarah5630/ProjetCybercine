@@ -5,7 +5,6 @@
 session_start();
 
 
-
 use \Projet\Controllers\MovieController;
 use \Projet\Controllers\GenreController;
 use \Projet\Controllers\UserController;
@@ -20,9 +19,7 @@ if (file_exists(__DIR__ . "/.env")) {
 
 try {
     $MovieController = new MovieController();
-
     $GenreController = new GenreController();
-
     $UserController = new UserController();
 
     if (isset($_GET['action'])) {
@@ -56,15 +53,15 @@ try {
                 break;
 
             default:
-                // Action non reconnue
+                // error
                 echo "Une erreur est survenue!!!!";
                 break;
         }
     } else {
         require('./App/Views/Admin/AddMovie.php');
     }
-} catch (Error $e) {
 
+} catch (Error $e) {
     require './Errorcatcher.php';
 } catch (Exception $e) {
     require './Error404.php';

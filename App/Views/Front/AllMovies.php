@@ -33,12 +33,10 @@ include_once('./App/Views/Front/ModalMovies.php');
 
 <nav aria-label="Page navigation example">
     <ul class="pagination justify-content-center">
-
         <li class="page-item"><a class="page-link" title="Page 1" href="#">1</a></li>
         <li class="page-item"><a class="page-link" title="Page 2" href="#">2</a></li>
         <li class="page-item"><a class="page-link" title="Page 3" href="#">3</a></li>
-        <li class="page-item">
-            <a class="page-link" title="Suivant" href="#">Suivant</a>
+        <li class="page-item"><a class="page-link" title="Suivant" href="#">Suivant</a>
         </li>
     </ul>
 </nav>

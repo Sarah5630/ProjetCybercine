@@ -24,7 +24,7 @@
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gybBud7R1S7GfPL12LOsej7Bb/13gkGSLl7Qf2Q4j8x5flRRz" crossorigin="anonymous"></script>
 
   <!-- Custom JavaScript files -->
-  <script src="./Public/js/stars.js" defer></script>
+  <script src="./Public/js/stars.js"></script>
 
   <!-- Fontawesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
