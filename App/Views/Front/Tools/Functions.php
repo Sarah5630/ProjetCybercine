@@ -1,5 +1,6 @@
 <?php
 
+// To truncates a given text to a specified character limit and adds '...' at the end.
 
 function truncateText($text, $limit)
 {

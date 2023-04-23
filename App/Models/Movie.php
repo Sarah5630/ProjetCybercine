@@ -111,13 +111,19 @@ class Movie extends Manager
     {
         // Get top 3
         $db = $this->manager();
-        $req = $db->prepare("SELECT * FROM movies LIMIT 3");
+        $req = $db->prepare("SELECT movies.IdMovie, movies.Title, movies.ReleaseDate, movies.Director, movies.Synopsis, movies.Casting, movies.Picture, movies.Duration, movies.DateAdded, movies.IdGenre, AVG(ratings.Rating) as average_rating, users.Pseudo
+        FROM movies
+        JOIN ratings ON movies.IdMovie = ratings.IdMovie
+        JOIN users ON ratings.Pseudo = users.Pseudo
+        GROUP BY movies.IdMovie
+        ORDER BY average_rating DESC
+        LIMIT 3");
+        // Execute the prepared statement
         $req->execute();
 
-        // Fetch the top 3 movies from the result set
+        // Fetch the results as an associative array
         $topMovies = $req->fetchAll(PDO::FETCH_ASSOC);
-   
-        // Return the array of top rated movies
+
         return $topMovies;
     }
 

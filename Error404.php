@@ -10,7 +10,9 @@
 
 <body>
     <h1> Page introuvable !!</h1>
-    <p>Cette page n'existe pas, vous pouvez revenir à l'accueil en cliquant ici<a href="index.php" title="Retour à l'accueil"></a></p>
+    <p>Cette page n'existe pas, vous pouvez revenir à l'accueil en cliquant ici</p>
+    <a class="blue-button" href="index.php" title="Retour à l'accueil"></a>
 </body>
 
 </html>
+ 

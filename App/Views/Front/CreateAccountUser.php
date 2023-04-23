@@ -1,4 +1,5 @@
 <?php
+// Include the Head and Header templates
 include_once('./App/Views/Front/Layouts/Head.php');
 include_once('./App/Views/Front/Layouts/Header.php');
 ?>
@@ -8,6 +9,7 @@ include_once('./App/Views/Front/Layouts/Header.php');
    <h2>Créer un compte</h2>
    <hr>
 
+   <!-- User registration form -->
    <form action="index.php?action=createUser" method="post">
       <div class="form-row">
          <div class="col-md-6">
@@ -37,10 +39,11 @@ include_once('./App/Views/Front/Layouts/Header.php');
          </label>
       </div>
       <div>
+         <!-- Submit button for registration form -->
          <input type="submit" class="btn btn-primary btnCon" name="submit" value="Créer un compte">
       </div>
    </form>
 </section>
 
-
+<!-- Include the Footer template -->
 <?php include_once('./App/Views/Front/Layouts/Footer.php'); ?>

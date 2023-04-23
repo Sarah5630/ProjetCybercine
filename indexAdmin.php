@@ -54,7 +54,7 @@ try {
 
             default:
                 // error
-                echo "Une erreur est survenue!!!!";
+                echo "Une erreur est survenue";
                 break;
         }
     } else {

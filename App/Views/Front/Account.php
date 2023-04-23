@@ -1,4 +1,5 @@
 <?php
+// Include the Head and Header templates
 include_once('./App/Views/Front/Layouts/Head.php');
 include_once('./App/Views/Front/Layouts/Header.php');
 ?>
@@ -13,21 +14,19 @@ include_once('./App/Views/Front/Layouts/Header.php');
    <?php if (!empty($userInfo)) : ?>
       <hr>
       <ul>
-
+         <!-- Display the user information -->
          <li>Pseudo : <?php echo $userInfo['Pseudo']; ?></li>
          <li>Nom : <?php echo $userInfo['Name']; ?></li>
          <li>Prénom : <?php echo $userInfo['Firstname']; ?></li>
          <li>Email : <?php echo $userInfo['Email']; ?></li>
       </ul>
-
-
-
    <?php endif; ?>
 
 </section>
 <section id="deleteUser" class="container bg-contact text-right">
    <h2>Supprimer mon compte</h2>
    <hr>
+   <!-- Form to delete the user account -->
    <form action="index.php?action=deleteUser" method="post">
       <div class="form-row">
          <div class="col-md-6">
@@ -46,6 +45,7 @@ include_once('./App/Views/Front/Layouts/Header.php');
 <section id="updateUser" class="container bg-contact">
    <h2>Modifier mes informations</h2>
    <hr>
+   <!-- Form to update the user information -->
    <form action="index.php?action=updateUser" method="post">
       <div class="form-row">
          <div class="col-md-6">
@@ -74,5 +74,8 @@ include_once('./App/Views/Front/Layouts/Header.php');
    </form>
 </section>
 
+<a href class="btnUp" title="Bouton up">
+   <img src="Public/img/up-arrow-button-svgrepo-com.svg" alt="bouton up" class="icone">
+</a>
 
 <?php include_once('./App/Views/Front/Layouts/Footer.php'); ?>

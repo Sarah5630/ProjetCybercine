@@ -38,7 +38,7 @@ class GenreController
 
             if ($result) {
                 // Redirect the user 
-                header('Location: indexAdmin.php?action=deleteGenre');
+                header('Location: indexAdmin.php?action=addGenre');
                 exit();
             } else {
                 // Display an error message

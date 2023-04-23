@@ -1,14 +1,15 @@
 <?php
+//Include the head and header sections
 include_once('./App/Views/Front/Layouts/Head.php');
 include_once('./App/Views/Front/Layouts/Header.php');
 ?>
 
 <section id="topMovies">
     <div class="container mt-4">
-        <div class="row">
+        <div class="row justify-content-center">
 
             <?php foreach ($topRatedMovies as $movie) : ?>
-
+                <!-- Display each movie -->
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="card my-card-img-top">
                         <img class="card-img-top my-img top-card my-card" src="Data\images\<?php echo $movie['Picture']; ?>" alt="<?php echo $movie['Title']; ?>">
@@ -32,10 +33,15 @@ include_once('./App/Views/Front/Layouts/Header.php');
     </div>
 
     <?php
+    // Include the modal
     $movies = $topRatedMovies;
     include_once('./App/Views/Front/ModalMovies.php');
     ?>
 </section>
 
+<a href class="btnUp" title="Bouton up">
+    <img src="Public/img/up-arrow-button-svgrepo-com.svg" alt="bouton up" class="icone">
+</a>
 
+<!-- Include the footer section -->
 <?php include_once('./App/Views/Front/Layouts/Footer.php'); ?>

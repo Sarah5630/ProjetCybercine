@@ -1,9 +1,11 @@
 <?php foreach ($movies as $movie) : ?>
+    <!-- Creates a modal for each movie in the loop -->
     <div class="modal fade" id="movieModal<?php echo $movie['IdMovie']; ?>" tabindex="-1" role="dialog" aria-labelledby="movieModalLabel<?php echo $movie['IdMovie']; ?>" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <ul class="nav nav-tabs" role="tablist">
+                        <!-- creates a tab for each modal -->
                         <li class="nav-item">
                             <a class="nav-link active" data-toggle="tab" title="Détails Film" href="#detailsTab<?php echo $movie['IdMovie']; ?>" role="tab">Détails</a>
                         </li>
@@ -14,6 +16,7 @@
                             <a class="nav-link" data-toggle="tab" title="Tous les commentaires" href="#commentsTab<?php echo $movie['IdMovie']; ?>" role="tab">Tous les commentaires</a>
                         </li>
                     </ul>
+                    <!-- close button -->
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -21,6 +24,7 @@
                 </div>
                 <div class="modal-body mx-4">
                     <div class="tab-content">
+                        <!-- detail of the movie -->
                         <div class="tab-pane active" id="detailsTab<?php echo $movie['IdMovie']; ?>" role="tabpanel">
                             <div class="row">
                                 <div class="col-9">
@@ -36,6 +40,7 @@
                             <p>Résumé : <?php echo $movie['Synopsis']; ?></p>
                         </div>
 
+                        <!-- form to rate and comment -->
                         <div class="tab-pane" id="ratingTab<?php echo $movie['IdMovie']; ?>" role="tabpanel">
                             <form method="post" action="index.php?action=addComment">
                                 <p>Donnez-nous votre avis</p>
@@ -55,7 +60,7 @@
                                 <input type="submit" value="Envoyer">
                             </form>
                         </div>
-
+                        <!-- display all comments for each movie -->
                         <div class="tab-pane" id="commentsTab<?php echo $movie['IdMovie']; ?>" role="tabpanel">
                             <ul class="list-group">
                                 <?php foreach ($allMoviesComments[$movie['IdMovie']] as $comment) : ?>
@@ -69,7 +74,7 @@
                                 <?php endforeach; ?>
                             </ul>
                         </div>
-                        
+
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
                         </div>

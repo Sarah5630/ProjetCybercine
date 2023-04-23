@@ -16,7 +16,7 @@ Les images et toutes les informations concernant les films sont réelles et non 
                        375x812 
 - Javascript
 - PHP : orienté objet
-- SQL : CRUD complet
+- SQL : CRUD complet avec jointures
 
 Le site est réalisé sur une architecture MVC (Modele vue controlleur) et "composer" a été installé pour gérer les dépendances.
 

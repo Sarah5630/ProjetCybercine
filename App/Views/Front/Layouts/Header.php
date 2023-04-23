@@ -22,7 +22,6 @@
         <img src="./Public/img/bandeau2.jpg" class="img-fluid my-img-fluid" alt="bandeau">
         <div class="text-container">
             <h1>CYBERCINÉ</h1>
-            <!-- <p>Description</p> -->
         </div>
     </div>
 

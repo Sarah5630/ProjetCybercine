@@ -2,6 +2,7 @@
 
 <header id="headerAdmin">
 
+    <!-- Logout button -->
     <a title="deconnexion" class="btn btn-adm btn-logout" href="index.php?action=logout" type="submit">Déconnexion</a>
 
     <!-- Image container -->
@@ -12,7 +13,7 @@
         </div>
     </div>
 
-    <!-- nav -->
+    <!-- Navigation menu -->
     <nav role="navigation" class="navbar navbar-expand-md navbar-light my-4 justify-content-center">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>

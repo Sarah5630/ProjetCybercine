@@ -1,17 +1,20 @@
 <?php
-
+// Include the head and header sections
 include_once('./App/Views/Front/Layouts/Head.php');
 include_once('./App/Views/Front/Layouts/Header.php');
 
-$message = isset($_GET['message']) ? $_GET['message'] : '';?>
+// Check if there is a message to display
+$message = isset($_GET['message']) ? $_GET['message'] : ''; ?>
 
 <section id="userConnect" class="container text-center">
 
     <?php
+    // Display error message if it exists
     if (!empty($message)) {
         echo '<div class="alert alert-danger">' . $message . '</div>';
-    }?>
+    } ?>
 
+    <!-- Display login form -->
     <form action="index.php?action=login" method="post">
         <div class="form-group">
             <label for="pseudo">Votre pseudo</label>
@@ -29,4 +32,5 @@ $message = isset($_GET['message']) ? $_GET['message'] : '';?>
     </div>
 </section>
 
+<!-- Include the footer section -->
 <?php include_once('./App/Views/Front/Layouts/Footer.php'); ?>

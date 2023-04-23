@@ -201,7 +201,6 @@ h2 {
 
 .myImg {
     height: 350px;
-    /* height: 400px; */
     width: 300px;
     margin: auto;
 }
@@ -213,6 +212,7 @@ h2 {
     border-radius: 50%;
     position: absolute;
     right: 50px;
+
 }
 
 .btnUp .icone:hover {

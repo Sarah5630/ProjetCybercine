@@ -1,8 +1,10 @@
 <?php
+// Include the head and header templates
 include_once('./App/Views/Front/Layouts/Head.php');
 include_once('./App/Views/Front/Layouts/Header.php');
 ?>
 
+<!-- Carousel -->
 <div id="goHome" class="carousel slide  d-none d-lg-block" data-ride="carousel">
   <div class="carousel-inner">
     <?php if (isset($movies) && !empty($movies)) : ?>
@@ -59,6 +61,7 @@ include_once('./App/Views/Front/Layouts/Header.php');
     </div>
   </div>
 
+  <!-- Display the latest movies added to the site -->
   <h3 class="my-4">Les derniers films arrivés</h3>
   <hr>
   <div id="lastMovies" class="row my-row">
@@ -98,13 +101,14 @@ include_once('./App/Views/Front/Layouts/Header.php');
 </div>
 
 <?php
+// include the modal box
 $movies = $latestMovies;
-include_once('./App/Views/Front/ModalMovies.php');
-?>
+include_once('./App/Views/Front/ModalMovies.php'); ?>
 
+<!-- Button to scroll back to the top of the page -->
 <a href class="btnUp" title="Bouton up">
   <img src="Public/img/up-arrow-button-svgrepo-com.svg" alt="bouton up" class="icone">
 </a>
 
-
+<!-- Include the footer layout -->
 <?php include_once('./App/Views/Front/Layouts/Footer.php'); ?>

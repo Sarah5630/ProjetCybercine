@@ -70,11 +70,8 @@ include_once('./App/Views/Front/Layouts/Header.php');
    </form>
 </section>
 
-
-
-
-
-
-
+<a href class="btnUp" title="Bouton up">
+  <img src="Public/img/up-arrow-button-svgrepo-com.svg" alt="bouton up" class="icone">
+</a>
 
 <?php include_once('./App/Views/Front/Layouts/Footer.php'); ?>

@@ -1,4 +1,5 @@
 <?php
+// Include the Head and Header templates
 include_once('./App/Views/Front/Layouts/Head.php');
 include_once('./App/Views/Front/Layouts/Header.php');
 ?>
@@ -7,6 +8,7 @@ include_once('./App/Views/Front/Layouts/Header.php');
 
     <h2>Nous contacter</h2>
     <hr>
+    <!-- radio buttons -->
     <div class="custom-control custom-radio">
         <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
         <label class="custom-control-label mt-4" for="customRadio1">Madame</label>
@@ -20,6 +22,7 @@ include_once('./App/Views/Front/Layouts/Header.php');
         <label class="custom-control-label mb-4" for="customRadio2">Autre</label>
     </div>
 
+    <!-- Contact form -->
     <form action="index.php?action=contact" method="post">
         <div class="form-group mb-4">
             <label for="pseudo">Pseudo</label>
@@ -42,10 +45,15 @@ include_once('./App/Views/Front/Layouts/Header.php');
             <textarea id="message" name="message" rows="5" class="form-control" placeholder="Votre message" required></textarea>
         </div>
 
+        <!-- Submit button -->
         <button type="button" class="btn btnCon btn-info"><a href="index.php?action=goHome" title="Bouton envoyer">Envoyer</a></button>
     </form>
 </section>
 
+<!-- Button to scroll up to the top of the page -->
+<a href class="btnUp" title="Bouton up">
+    <img src="Public/img/up-arrow-button-svgrepo-com.svg" alt="bouton up" class="icone">
+</a>
 
-
+<!-- Include the Footer template -->
 <?php include_once('./App/Views/Front/Layouts/Footer.php'); ?>
