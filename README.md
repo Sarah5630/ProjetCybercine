@@ -1,6 +1,8 @@
 
 # ProjetFinal Cybercine
 
+lien vers le site en ligne : http://greta-bretagne-sud.fr/stagiaires-kercode/sarah-roperch/cybercine/
+
 Bonjour, ceci est mon projet de fin de formation Kercode 2023 pour l'obtention du titre de Développeur intégrateur en réalisation d'applications web.
 
 Il s'agit d'un site fictif de films dont les utilisateurs inscrits peuvent noter ou commenter des films qui sont mis en ligne par un administrateur.
