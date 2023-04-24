@@ -15,15 +15,16 @@
 
     <!-- Navigation menu -->
     <nav role="navigation" class="navbar navbar-expand-md navbar-light my-4 justify-content-center">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+        <button id="burger-admin" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu-admin" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <!-- links -->
-        <div class="collapse navbar-collapse justify-content-center">
+        <div class="collapse navbar-collapse justify-content-center" id="menu-admin">
             <ul class="navbar-nav my-navbar-nav justify-content-center">
                 <li class="nav-item d-flex justify-content-center"><a title="Accueil" class="nav-link my-nav-link" href="index.php?action=goHome">ACCUEIL</a></li>
-                <li class="nav-item d-flex justify-content-center"><a title="Ajouter un film" class="nav-link my-nav-link" href="indexAdmin.php?action=addMovie">AJOUTER UN FILM</a></li>
-                <li class="nav-item d-flex justify-content-center"><a title="Ajouter un genre" class="nav-link my-nav-link" href="indexAdmin.php?action=addGenre">AJOUTER UN GENRE</a></li>
+                <li class="nav-item d-flex justify-content-center"><a title="Ajouter un film" class="nav-link my-nav-link" href="indexAdmin.php?action=addMovie">AJOUTER UN FILM</a>
+                </li>
+                <li class="nav-item d-flex justify-content-center"><a title="Ajputer un genre" class="nav-link my-nav-link" href="indexAdmin.php?action=addGenre">AJOUTER UN GENRE</a></li>
                 <li class="nav-item d-flex justify-content-center"><a title="Mon compte" class="nav-link my-nav-link" href="index.php?action=displayUserInfo">MON COMPTE</a></li>
             </ul>
         </div>
